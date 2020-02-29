@@ -97,6 +97,17 @@
                 <td>{{ fecha | date:'MMMM - dd' }}</td>
             </tr>
             <tr>
+                <td>{{ fecha }}</td>
+                <td>
+                    date:'MMMM - dd':'':'{{idioma}}'
+                    <br>
+                    <button (click)="idioma='es'" class="mr-1 btn btn-primary">Español</button>
+                    <button (click)="idioma='en'" class="mr-1 btn btn-secondary">Inglés</button>
+                    <button (click)="idioma='fr'" class="mr-1 btn btn-success">francés</button>
+                </td>
+                <td>{{ fecha | date:'MMMM - dd':'':idioma }}</td>
+            </tr>
+            <tr>
                 <td>{{ nombre2 }}</td>
                 <td>personalizado-capitalizado</td>
                 <td>{{ nombre2 | capitalizado }}</td>

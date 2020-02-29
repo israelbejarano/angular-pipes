@@ -27,4 +27,6 @@ export class AppComponent {
   });
   fecha = new Date();
   video = '-2VPKWwl5Rw';
+
+  idioma: 'en';
 }
